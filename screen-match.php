@@ -1,6 +1,6 @@
 <?php
 
-function exibeMensagemLancamento($ano){
+function exibeMensagemLancamento(int $ano): void  {
     if ($ano > 2022) {
         echo "Esse filme é um lançamento\n";
     } elseif($ano > 2020 && $ano <= 2022) {
@@ -10,7 +10,7 @@ function exibeMensagemLancamento($ano){
     }
 }
 
-function incluidoNoPlano($planoPrime, $anoLancamento){
+function incluidoNoPlano(bool $planoPrime, int $anoLancamento): bool {
    return $planoPrime || $anoLancamento < 2020;
 }
 
@@ -36,7 +36,7 @@ echo "Nome do filme: " . $nomeFilme . "\n";
 echo "Nota do filme: $notaFilme\n";
 echo "Ano de lançamento: $anoLancamento\n";
 
-exibeMensagemLancamento($ano);
+exibeMensagemLancamento($anoLancamento);
 
 $genero = match ($nomeFilme) {
     "Top Gun - Maverick" => "ação",
