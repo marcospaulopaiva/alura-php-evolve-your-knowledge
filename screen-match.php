@@ -64,3 +64,9 @@ var_dump($notas);
 
 echo min($notas) . " é a menor notas". "\n";
 echo max($notas) . " é a maior notas". "\n";
+
+var_dump($filme['nome']);
+$posicaoDoisPontos = strpos($filme['nome'],':');
+var_dump($posicaoDoisPontos);
+
+var_dump(substr($filme['nome'], 0, $posicaoDoisPontos));
