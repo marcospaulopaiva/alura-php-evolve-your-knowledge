@@ -56,3 +56,11 @@ $filme = [
 
 
 echo $filme["ano"];
+
+
+var_dump($notas);
+sort($notas);
+var_dump($notas);
+
+echo min($notas) . " é a menor notas". "\n";
+echo max($notas) . " é a maior notas". "\n";
