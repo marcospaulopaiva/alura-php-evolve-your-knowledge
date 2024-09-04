@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/src/funcoes.php";
+include __DIR__ . "/src/funcoes.php";
 
 echo "Bem-vindo(a) ao screen match!\n";
 
